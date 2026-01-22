@@ -1,3 +1,7 @@
-# Деплой приложения на сервер с использованием pm2
+# Доступ к проекту
 
-Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
+| Компонент  | Адрес |
+|------------|-------|
+| IP сервера | 51.250.40.0 |
+| Frontend   | <a href="https://front.mesto.nomorepartiessbs.ru" target="_blank">front.mesto.nomorepartiessbs.ru</a> |
+| Backend    | <a href="https://api.front.mesto.nomorepartiessbs.ru" target="_blank">api.front.mesto.nomorepartiessbs.ru</a> |
