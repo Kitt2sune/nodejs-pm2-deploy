@@ -18,7 +18,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'pre-deploy': `scp -i ${DEPLOY_SSH_KEY} .env .env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/backend/`,
+      'pre-deploy': `scp -i ${DEPLOY_SSH_KEY} ./.env ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/backend/`,
       'post-deploy': 'cd backend && . ~/.nvm/nvm.sh && npm i && rm -rf dist && npm run build && pm2 startOrRestart ecosystem.config.js --env production'
     },
   },
