@@ -14,7 +14,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy': 'cd frontend && . ~/.nvm/nvm.sh && export NODE_OPTIONS=--openssl-legacy-provider && npm i && npm run build'
+      'post-deploy': `cd ${DEPLOY_PATH}/frontend && . ~/.nvm/nvm.sh && export NODE_OPTIONS=--openssl-legacy-provider && npm i && npm run build`
     },
   },
 };
